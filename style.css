@@ -92,13 +92,13 @@ button {
   border: 0;
 }
 
-header {
-  border-bottom: 1px solid #e5e5e5;
-}
-
 ul {
   list-style: none;
   padding: 0px;
+}
+
+header {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .header-container {
@@ -188,12 +188,7 @@ ul {
   font-weight: 600;
 }
 
-.tectit-school-container > ul > li {
-  width: 290px;
-  height: 416px;
-}
-
-.techit-school-container > ul {
+.techit-school-container > .techit-school {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
@@ -201,47 +196,34 @@ ul {
   margin-top: 40px;
 }
 
-.techit-school-container > ul > li > div > img {
+.techit-school-container > .techit-school > li {
   width: 290px;
-}
-
-.techit-school-container > ul > li > span {
-  font-size: 14px;
-  font-weight: 600;
-  color: #3f3f46;
-  border: 1px solid #3f3f46;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-
-.techit-school-container > ul > li > h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 16px 0 8px 0;
-}
-
-.techit-school-container > ul > li > h5 {
-  font-size: 18px;
-}
-
-.date {
-  margin-top: 16px;
-  color: #a3a3a3;
+  height: 416px;
 }
 
 .img-container {
   margin-bottom: 16px;
   overflow: hidden;
   border-radius: 12px;
+  width: 290px;
+  height: 221px;
 }
 
 .img-container > img {
   width: 290px;
-  border-radius: 12px;
+  height: 221px;
+  transition: all 0.5s;
 }
 
 .img-container > img:hover {
   transform: scale(1.1);
+}
+
+.techit-school-container > .techit-school > li > span {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
 }
 
 .d-7 {
@@ -259,10 +241,25 @@ ul {
   border: 1px solid #3f3f46;
 }
 
+.techit-school-container > .techit-school > li > h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 16px 0 8px 0;
+}
+
+.techit-school-container > .techit-school > li > h5 {
+  font-size: 18px;
+}
+
+.date {
+  margin-top: 16px;
+  color: #a3a3a3;
+}
+
 .techit-alarm {
   background-image: url("./images/techit_alarm.png");
   height: 206px;
-  background-color: cover;
+  background-size: cover;
 }
 
 .techit-alarm-container {
@@ -291,4 +288,68 @@ ul {
   margin-top: 20px;
   font-size: 14px;
   color: #737373;
+}
+
+.onboarding {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 40px;
+  justify-items: center;
+}
+
+.onboarding > li {
+  width: 398px;
+  height: 317px;
+}
+
+.onboarding > li > .img-container {
+  margin-bottom: 16px;
+  overflow: hidden;
+  border-radius: 12px;
+  width: 398px;
+  height: 198px;
+}
+
+.onboarding > li > .img-container > img {
+  width: 398px;
+  height: 198px;
+  transition: all 0.5s;
+}
+
+.onboarding > li > .img-container > img:hover {
+  transform: scale(1.1);
+}
+
+.onboarding > li > h5 {
+  font-size: 14px;
+}
+
+.onboadring > li > h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.onboarding > li > .price {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.onboarding > li > .price > span {
+  margin-left: 4px;
+  font-size: 14px;
+  color: #a3a3a3;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.onboarding > li > span {
+  color: #e67800;
+  background-color: #ffedd5;
+  padding: 2px 6px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
 }
